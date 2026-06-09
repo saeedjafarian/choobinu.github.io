@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Social Links</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #020617;
+      padding: 24px 28px;
+      border-radius: 16px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.4rem;
+    }
+    p {
+      margin: 0 0 20px;
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .link-btn {
+      display: block;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #1f2937;
+      color: #e5e7eb;
+      font-size: 0.95rem;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .link-btn:hover {
+      background: #374151;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Choobinu</h1>
+    <p>Find me on social media</p>
+
+    <div class="links">
+      <a class="link-btn" href="https://t.me/your_username" target="_blank">
+        Telegram
+      </a>
+      <a class="link-btn" href="https://instagram.com/your_username" target="_blank">
+        Instagram
+      </a>
+      <a class="link-btn" href="https://x.com/your_username" target="_blank">
+        X (Twitter)
+      </a>
+      <a class="link-btn" href="mailto:you@example.com">
+        Email
+      </a>
+    </div>
+  </div>
+</body>
+</html>
