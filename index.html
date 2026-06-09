@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>My Social Links</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-    }
-    .card {
-      background: #020617;
-      padding: 24px 28px;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-      max-width: 360px;
-      width: 100%;
-      text-align: center;
-    }
-    h1 {
-      margin: 0 0 8px;
-      font-size: 1.4rem;
-    }
-    p {
-      margin: 0 0 20px;
-      font-size: 0.9rem;
-      color: #9ca3af;
-    }
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .link-btn {
-      display: block;
-      text-decoration: none;
-      padding: 10px 14px;
-      border-radius: 999px;
-      background: #1f2937;
-      color: #e5e7eb;
-      font-size: 0.95rem;
-      transition: background 0.15s, transform 0.1s;
-    }
-    .link-btn:hover {
-      background: #374151;
-      transform: translateY(-1px);
-    }
-  </style>
+<meta charset="UTF-8">
+<title>Choobinu Carpentry Links</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Warm vignette overlay */
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.7));
+    z-index: 0;
+  }
+
+  .card {
+    position: relative;
+    z-index: 1;
+    background: rgba(20, 15, 10, 0.65);
+    padding: 40px 32px;
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.12);
+    width: 90%;
+    max-width: 380px;
+    text-align: center;
+    color: #f5f5f5;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 14px;
+    font-weight: 700;
+    color: #f2d39b;
+    text-shadow: 0 0 12px rgba(0,0,0,0.8), 0 0 6px #f2d39b55;
+    letter-spacing: 1px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 10px;
+  }
+
+  .btn {
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #2b1a0f;
+    background: linear-gradient(180deg, #d7b48a, #b68a5a);
+    border: 1px solid #8b5a2b;
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.4),
+                0 4px 10px rgba(0,0,0,0.5);
+    transition: 0.2s ease;
+  }
+
+  .btn:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(180deg, #e3c49c, #a9763f);
+    box-shadow: inset 0 2px 4px rgba(255,255,255,0.5),
+                0 6px 14px rgba(0,0,0,0.6);
+  }
+</style>
 </head>
 <body>
-  <div class="card">
-    <h1>Choobinu</h1>
-    <p>Find me on social media</p>
 
-    <div class="links">
-      <a class="link-btn" href="https://t.me/your_username" target="_blank">
-        Telegram
-      </a>
-      <a class="link-btn" href="https://instagram.com/your_username" target="_blank">
-        Instagram
-      </a>
-      <a class="link-btn" href="https://x.com/your_username" target="_blank">
-        X (Twitter)
-      </a>
-      <a class="link-btn" href="mailto:you@example.com">
-        Email
-      </a>
-    </div>
+<div class="card">
+  <h1>Choobinu</h1>
+
+  <div class="links">
+      <a class="btn" href="https://eitaa.com/choobinu" target="_blank">Eitaa</a>
+    <a class="btn" href="https://www.instagram.com/alireza_pourheidrian?utm_source=qr&igsh=MXNpd3EwY2tueXU3aw==" target="_blank">Instagram</a>
+    <a class="btn" href="https://wa.me/989103318606" target="_blank">WhatsApp</a>
   </div>
+</div>
+
 </body>
 </html>
