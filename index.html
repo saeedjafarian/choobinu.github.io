@@ -5,17 +5,26 @@
 <title>Choobinu Carpentry Links</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  body {
+    body {
     margin: 0;
     font-family: "Segoe UI", sans-serif;
-    background: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+
+    /* Fallback wood color */
+    background: #3e2a1f;
+
+    /* Background image on top */
+    background-image: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=60');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     position: relative;
     overflow: hidden;
-  }
+    }
 
   /* Warm vignette overlay */
   body::before {
